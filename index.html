@@ -18,7 +18,7 @@
       background-position: center;
       color: white;
       text-align: center;
-      padding: 100px 20px;
+      padding: 110px 20px;
     }
 
     header h1 {
@@ -30,6 +30,11 @@
       background-color: #2c3e50;
       text-align: center;
       padding: 10px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
 
     nav a {
@@ -43,6 +48,7 @@
       padding: 20px;
       max-width: 1000px;
       margin: auto;
+      margin-top: 30px; /* Adjust for fixed nav height */
     }
 
     .card {
@@ -55,7 +61,7 @@
 
     .card img {
       width: 100%;
-      /* height: 600px; */
+      height: 600px;
       object-fit: cover;
     }
 
@@ -76,9 +82,6 @@
     }
 
     @media (max-width: 768px) {
-      header {
-        padding: 60px 15px;
-      }
 
       header h1 {
         font-size: 28px;
@@ -89,11 +92,15 @@
       }
 
       .card img {
-        height: 250px;
+        height: 270px;
       }
 
       body {
         overflow-x: hidden;
+      }
+
+      .container {
+        margin-top: 50px;
       }
     }
   </style>
@@ -137,13 +144,12 @@
       </div>
 
       <div class="card">
-        <img src="dzknorsutyun.jpg" alt="Տաղավար 2">
+        <img src="dzknorsutyun.jpg" alt="Ձկնորսություն">
         <div class="card-content">
           <h3>Ձկնորսություն</h3>
           <p></p>
         </div>
       </div>
-
     </section>
 
     <section id="contact">
